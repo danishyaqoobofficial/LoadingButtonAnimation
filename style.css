@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+
+
+@keyframes danish{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 0 0 25px red;
+    }
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 0 0 25px rgb(72, 255, 0);
+
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 0 0 25px rgb(225, 0, 255);
+
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 0 0 25px rgb(0, 255, 221);
+
+    }
+}
+
+span{
+    transform: scale(1.2)translate(100deg);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 75px 42px;
+    animation-name: danish;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+
